@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ✅ Missing Tailwind CDN (THIS WAS YOUR MAIN ISSUE) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container flex flex-col items-center gap-10">
+
+        <!-- 🔥 Hero Section -->
+        <div class="hero text-center">
+            <h1 class="title">FaceFinder</h1>
+            <p class="tagline">Discover people, explore profiles, search instantly.</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- 🔍 Search Input -->
+        <input class="inp px-5 py-5 rounded outline-none bg-[#111] text-[#888]" type="text"
+            placeholder="Search user...">
+
+        <!-- Message -->
+        <div class="message" style="visibility: hidden;">This is the message</div>
+
+        <!-- Cards -->
+        <div class="cards flex gap-10"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
